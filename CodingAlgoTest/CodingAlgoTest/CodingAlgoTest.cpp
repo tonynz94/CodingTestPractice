@@ -1,21 +1,33 @@
-﻿// CodingAlgoTest.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
-//
-
-#include <iostream>
+﻿#include <iostream>
 
 
 void DDD()
 {
-    std::cout << "Test" << std::endl;
+    std::cout << "Hello World!\n";
+
 }
 
-
-
-int main()
+//깊이 우선 탐색
+//전위 순회
+//중위 순회
+//후위 순
+void BFS(int level)
 {
-    std::cout << "Hello World\n";
+    if(level > 7)
+        return;
+    else
+    {
+        
+        std::cout << level << std::endl; //전위
 
-    std::cout << "hello my name is tony";
+        //자식의 왼쪽으로 이동
+        BFS(level*2);
 
-    DDD();
+        std::cout << level << std::endl; //중위
+
+        //자식의 오른쪽으로 이동
+        BFS(level*2 + 1);
+
+        std::cout << level << std::endl; //후위
+    }
 }

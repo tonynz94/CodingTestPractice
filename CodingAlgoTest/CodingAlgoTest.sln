@@ -5,11 +5,7 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CodingAlgoTest", "CodingAlgoTest\CodingAlgoTest.vcxproj", "{87DEDD91-48B4-40B9-BBE3-C25A051199A7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "59_DFS", "59_DFS\59_DFS.vcxproj", "{6CCE6AC8-2F39-4E8C-821B-992B74BBA3D3}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "60_합이같은부분집합", "60_합이같은부분집합\60_합이같은부분집합.vcxproj", "{382948B2-A7E3-4169-95AC-84E58F7BE755}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "61_특정수만들기", "61_특정수만들기\61_특정수만들기.vcxproj", "{AD7435DA-DA9A-4211-953C-3314089AB8D1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BFS", "BFS", "{FB59815E-A403-467C-98F3-87EA734397D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
