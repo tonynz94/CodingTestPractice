@@ -2,7 +2,6 @@
 #include <vector>
 
 using namespace std;
-vector<pair<int, int>> map[30];
 int ch[30];
 int N; //정점 수
 int M; //간선 수
@@ -36,6 +35,8 @@ int main()
 	int n1, n2, cnt;
 	cin >> N;
 	cin >> M;
+
+	vector<vector<int>> map(10, vector<int>(10,0));
 
 	for (int i = 0; i < M; i++)
 	{
