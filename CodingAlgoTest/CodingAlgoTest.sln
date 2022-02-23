@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CodingAlgoTest", "CodingAlg
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "65_DFS", "65_DFS\65_DFS.vcxproj", "{A2DCDFFE-6297-44EC-A490-3AB86480905A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "68_DFS_가중치_방향그래프_인접리스트", "68_DFS_가중치_방향그래프_인접리스트\68_DFS_가중치_방향그래프_인접리스트.vcxproj", "{CE3EF2AD-845E-437B-AEEC-458CB70ED336}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{A2DCDFFE-6297-44EC-A490-3AB86480905A}.Release|x64.Build.0 = Release|x64
 		{A2DCDFFE-6297-44EC-A490-3AB86480905A}.Release|x86.ActiveCfg = Release|Win32
 		{A2DCDFFE-6297-44EC-A490-3AB86480905A}.Release|x86.Build.0 = Release|Win32
+		{CE3EF2AD-845E-437B-AEEC-458CB70ED336}.Debug|x64.ActiveCfg = Debug|x64
+		{CE3EF2AD-845E-437B-AEEC-458CB70ED336}.Debug|x64.Build.0 = Debug|x64
+		{CE3EF2AD-845E-437B-AEEC-458CB70ED336}.Debug|x86.ActiveCfg = Debug|Win32
+		{CE3EF2AD-845E-437B-AEEC-458CB70ED336}.Debug|x86.Build.0 = Debug|Win32
+		{CE3EF2AD-845E-437B-AEEC-458CB70ED336}.Release|x64.ActiveCfg = Release|x64
+		{CE3EF2AD-845E-437B-AEEC-458CB70ED336}.Release|x64.Build.0 = Release|x64
+		{CE3EF2AD-845E-437B-AEEC-458CB70ED336}.Release|x86.ActiveCfg = Release|Win32
+		{CE3EF2AD-845E-437B-AEEC-458CB70ED336}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
