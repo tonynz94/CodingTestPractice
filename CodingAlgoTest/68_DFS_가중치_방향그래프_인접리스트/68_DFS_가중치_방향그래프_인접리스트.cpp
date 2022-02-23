@@ -47,7 +47,7 @@ void DFS(int v, int sum)
             if (ch[map[v][i].first] != 1)
             {
                 ch[map[v][i].first] = 1;
-                DFS(map[v][i].first, sum + ch[map[v][i].second]);
+                DFS(map[v][i].first, sum + map[v][i].second);
                 ch[map[v][i].first] = 0;
             }
         }
