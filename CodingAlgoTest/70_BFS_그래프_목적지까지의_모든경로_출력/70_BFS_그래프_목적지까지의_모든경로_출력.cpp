@@ -68,15 +68,14 @@ int main()
 		{
 			if (ch[map[temp][i]] == 0)
 			{
-				ch[map[temp][i]] = num;
+				ch[map[temp][i]] = ch[temp] + 1;
 				arr[++back] = map[temp][i];
 			}		
 		}
-		num++;
 	}
 
-	for (int i = 1; i <= N; i++)
+	for (int i = 2; i <= N; i++)
 	{
-		cout << i +" + " + ch[i] << endl;
+		cout << i  << " : " << ch[i] - 1 << endl;
 	}
 }
