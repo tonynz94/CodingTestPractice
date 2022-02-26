@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "68_DFS_가중치_방향그�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "69_BFS", "69_BFS\69_BFS.vcxproj", "{5CDB0757-96F9-4517-89CC-3ED2A086A451}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "70_BFS_그래프_목적지까지의_모든경로_출력", "70_BFS_그래프_목적지까지의_모든경로_출력\70_BFS_그래프_목적지까지의_모든경로_출력.vcxproj", "{45182BC5-8D11-414D-993F-09FC23C5B5F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{5CDB0757-96F9-4517-89CC-3ED2A086A451}.Release|x64.Build.0 = Release|x64
 		{5CDB0757-96F9-4517-89CC-3ED2A086A451}.Release|x86.ActiveCfg = Release|Win32
 		{5CDB0757-96F9-4517-89CC-3ED2A086A451}.Release|x86.Build.0 = Release|Win32
+		{45182BC5-8D11-414D-993F-09FC23C5B5F0}.Debug|x64.ActiveCfg = Debug|x64
+		{45182BC5-8D11-414D-993F-09FC23C5B5F0}.Debug|x64.Build.0 = Debug|x64
+		{45182BC5-8D11-414D-993F-09FC23C5B5F0}.Debug|x86.ActiveCfg = Debug|Win32
+		{45182BC5-8D11-414D-993F-09FC23C5B5F0}.Debug|x86.Build.0 = Debug|Win32
+		{45182BC5-8D11-414D-993F-09FC23C5B5F0}.Release|x64.ActiveCfg = Release|x64
+		{45182BC5-8D11-414D-993F-09FC23C5B5F0}.Release|x64.Build.0 = Release|x64
+		{45182BC5-8D11-414D-993F-09FC23C5B5F0}.Release|x86.ActiveCfg = Release|Win32
+		{45182BC5-8D11-414D-993F-09FC23C5B5F0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
