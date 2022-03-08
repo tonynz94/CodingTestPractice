@@ -52,7 +52,7 @@ int friends(int a, int b)
 
 int Find(int a)
 {
-    if (m[a] == 0)
+    if (m[a] == 0 || m[a] == a)
     {
         return a;
     }
@@ -75,6 +75,12 @@ int main()
 
     cout << Find(3);
     cout << Find(8);
+
+    std::map<int,int>::iterator it;
+    for(it = m.begin(); it != m.end(); it++)
+    {
+
+    }
 
     if (Find(3) == Find(8))
         cout << "YES";

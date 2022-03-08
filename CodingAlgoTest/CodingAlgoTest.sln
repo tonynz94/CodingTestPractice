@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "76_이항계수(메모이�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "77_친구인가_UnionAndFind_자료구조", "77_친구인가_UnionAndFind_자료구조\77_친구인가_UnionAndFind_자료구조.vcxproj", "{51F9D09B-B7A1-4B42-9F7B-4FF4AB18D453}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "77_크루스칼_알고리즘", "77_크루스칼_알고리즘\77_크루스칼_알고리즘.vcxproj", "{3C741092-97B8-4039-B522-689DEE3F0380}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{51F9D09B-B7A1-4B42-9F7B-4FF4AB18D453}.Release|x64.Build.0 = Release|x64
 		{51F9D09B-B7A1-4B42-9F7B-4FF4AB18D453}.Release|x86.ActiveCfg = Release|Win32
 		{51F9D09B-B7A1-4B42-9F7B-4FF4AB18D453}.Release|x86.Build.0 = Release|Win32
+		{3C741092-97B8-4039-B522-689DEE3F0380}.Debug|x64.ActiveCfg = Debug|x64
+		{3C741092-97B8-4039-B522-689DEE3F0380}.Debug|x64.Build.0 = Debug|x64
+		{3C741092-97B8-4039-B522-689DEE3F0380}.Debug|x86.ActiveCfg = Debug|Win32
+		{3C741092-97B8-4039-B522-689DEE3F0380}.Debug|x86.Build.0 = Debug|Win32
+		{3C741092-97B8-4039-B522-689DEE3F0380}.Release|x64.ActiveCfg = Release|x64
+		{3C741092-97B8-4039-B522-689DEE3F0380}.Release|x64.Build.0 = Release|x64
+		{3C741092-97B8-4039-B522-689DEE3F0380}.Release|x86.ActiveCfg = Release|Win32
+		{3C741092-97B8-4039-B522-689DEE3F0380}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
