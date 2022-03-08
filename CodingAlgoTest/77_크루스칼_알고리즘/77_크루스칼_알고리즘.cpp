@@ -44,7 +44,7 @@
 
 using namespace std;
 
-map<int, int> m;
+vector<int> vec(30);
 
 class Path
 {
@@ -62,28 +62,33 @@ public:
     }
 };
 
+//부모 찾기
 int Find(int a)
 {
-    if (m[a] == 0)
+    if (vec[a] == a)
     {
-        return m[a];
+        return a;
     }
     else
     {
-        return Find(m[a]);
+        return vec[a] = Find(vec[a]);
     }
 }
 
-int Union(int a, int b)
+bool ConnectPath(int a, int b)
 {
-    if (m[a] == 0)
+    int an = Find(a);   
+    int bn = Find(b);
+
+
+    //연결되어 있지 않은 것
+    if (an != bn)
     {
-        return m[a] = b;
+        vec[an] = bn;
+        return true;
     }
-    else
-    {
-        return m[a] = Union(m[a], b);
-    }
+
+    return false;
 }
 
 int main()
@@ -91,6 +96,7 @@ int main()
     vector<Path> v;
     int a, b, c;
     int n, m;
+    int answer = 0;
 
     cin >> n >> m;
     for (int i = 0; i < m; i++)
@@ -99,12 +105,23 @@ int main()
         v.emplace_back(Path(a, b, c));
     }
     
+    for (int i = 1; i <= n; i++)
+    {
+        vec[i] = i;
+    }
+
     sort(v.begin(), v.end());
     vector<Path>::iterator it;
 
+    
+
+
     for (it = v.begin(); it != v.end(); it++)
     {
-        cout << it->_a << " " <<  it->_b << " " << it->_cost << endl;
+        if (ConnectPath(it->_a, it->_b))
+            answer += it->_cost;
     }
+
+    cout << answer;
 }
 
