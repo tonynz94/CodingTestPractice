@@ -38,7 +38,7 @@
     196
 */
 
-#include<stdio.h>
+#include <iostream>
 #include<algorithm>
 #include<queue>
 #include<vector>
@@ -61,34 +61,40 @@ public:
 
 int main()
 {
-	priority_queue<Edge> Q;
-	vector<pair<int, int> > map[30];
-	int i, n, m, a, b, c, res = 0;
-	scanf("%d %d", &n, &m);
-	for (i = 1; i <= m; i++) {
-		scanf("%d %d %d", &a, &b, &c);
-		map[a].push_back(make_pair(b, c));
-		map[b].push_back(make_pair(a, c));
-	}
-	Q.push(Edge(1, 0));
-	while (!Q.empty()) {
-		Edge tmp = Q.top();
-		Q.pop();
-		int v = tmp.nodeNum;
-		int cost = tmp.cost;
-		if (ch[v] == 0) {
-			res += cost;
-			ch[v] = 1;
-			for (i = 0; i < map[v].size(); i++) {
-				if (ch[map[v][i].first] == 0) {
-					Q.push(Edge(map[v][i].first, map[v][i].second));
-				}
-			}
-		}
+    int n, cnt;
+    int a, b, c;
+    int answer = 0;
+    cin >> n;
+    cin >> cnt;
 
-	}
-	printf("%d\n", res);
-	return 0;
+    priority_queue<Edge> q;
+    vector<vector<Edge>> map(n,vector<Edge>());
+
+    for (int i = 0; i < cnt; i++)
+    {
+        cin >> a >> b >> c;
+        map[a].emplace_back(Edge(a, b));
+    }
+
+    ch[1] = 1;
+    q.push(Edge(1,0));
+    while (!q.empty())
+    {
+       Edge tmp = q.top();
+       q.pop();
+       int v = tmp.nodeNum;
+       int value = tmp.cost;
+       if (ch[v] == 0)  //연결되어 있지 않은 노드라면
+       {
+           answer += value;
+           ch[v] = 1;
+           for (int i = 0; i < map[v].size(); i++)
+           {
+               q.push(map[v][i]);
+           }
+       }
+    }
+
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
