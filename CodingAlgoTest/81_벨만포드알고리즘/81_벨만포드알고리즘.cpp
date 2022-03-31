@@ -1,54 +1,87 @@
-﻿#include<stdio.h>
-#include<algorithm>
-#include<queue>
-#include<vector>
+﻿#include <stdio.h>
+#include <algorithm>
+#include <queue>
+#include <vector>
+#include <iostream>
+
+/*
+5 7
+1 2 5
+1 3 4
+2 3 -9
+2 5 13
+3 4 5
+4 2 3
+4 5 7
+1 5
+
+*/
+
 using namespace std;
-int dist[101];
-struct Edge {
-	int s;
-	int e;
-	int val;
-	Edge(int a, int b, int c) {
-		s = a;
-		e = b;
-		val = c;
-	}
+
+class toNode
+{
+public :
+	int _toN;
+	int _value;
+
+	toNode(int toN, int value) : _toN(toN), _value(value){}
 };
 
-int main() {
-	freopen("input.txt", "rt", stdin);
-	vector<Edge> Ed;
-	int i, n, m, a, b, c, j;
-	scanf("%d %d", &n, &m);
-	for (i = 1; i <= m; i++) {
-		scanf("%d %d %d", &a, &b, &c);
-		Ed.push_back(Edge(a, b, c));
+int main() 
+{
+	int n; //노드 수
+	int cnt;
+
+	int n1, n2, value;
+	int to, from;
+
+	cin >> n >> cnt;
+
+	vector<vector<int>> map(n+1, vector<int>(n+1, 0));
+	vector<int> answer(n+1 , 2147000000);
+
+	for (int i = 0; i < cnt; i++)
+	{
+		cin >> n1 >> n2 >> value;
+		map[n1][n2] = value;
 	}
-	for (i = 1; i <= n; i++) {
-		dist[i] = 2147000000;
-	}
-	int s, e;
-	scanf("%d %d", &s, &e);
-	dist[s] = 0;
-	for (i = 1; i < n; i++) {
-		for (j = 0; j < Ed.size(); j++) {
-			int s = Ed[j].s;
-			int e = Ed[j].e;
-			int w = Ed[j].val;
-			if (dist[s] != 2147000000 && dist[s] + w < dist[e]) {
-				dist[e] = dist[s] + w;
+
+	cin >> to >> from;
+	answer[to] = 0;
+
+	cout << "==";
+
+	for (int i = 1; i <= n; i++)
+	{
+		int node = i;
+		for (int j = 1; j <= n; j++)
+		{
+			if (map[j][node] != 0)
+			{
+				if (answer[j] + map[j][node] < answer[node])
+					answer[node] = answer[j] + map[j][node];
 			}
 		}
 	}
-	for (j = 0; j < Ed.size(); j++) {
-		int u = Ed[j].s;
-		int v = Ed[j].e;
-		int w = Ed[j].val;
-		if (dist[u] != 2147000000 && dist[u] + w < dist[v]) {
-			printf("-1\n");
-			exit(0);
+
+	//싸이클 검사
+	for (int i = 1; i <= n; i++)
+	{
+		int node = i;
+		for (int j = 1; j <= n; j++)
+		{
+			if (map[j][node] != 0)
+			{
+				if (answer[j] + map[j][node] < answer[node]) {
+					cout << "싸이클 존재";
+
+					return 1;
+				}
+			}
 		}
 	}
-	printf("%d\n", dist[e]);
-	return 0;
+
+	cout << answer[from];
+	
 }
