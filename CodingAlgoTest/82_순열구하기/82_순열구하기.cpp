@@ -1,15 +1,49 @@
-﻿
-#include <iostream>
+﻿#include <iostream>
 #include <map>
+#include <vector>
+
+using namespace std;
+
+int cnt, m;
+vector<int> b(5);
+vector<int> ch(5, 0);
+vector<int> answer(3);
+
+void DFS(int n)
+{
+	if (n == m-1)
+	{
+		for (int i = 0; i < m; i++)
+		{
+			cout << answer[i] << " ";
+		}
+		cout << endl;
+	}
+	else
+	{
+		for (int i = 1; i < b.size(); i++)	//1 3 6 7
+		{
+			if (ch[i] == 0)
+			{
+				answer[n] = b[i];
+				ch[i] = 1;
+				DFS(n + 1);
+				ch[i] = 0;
+			}
+		}
+	}
+}
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
-    std::map<int, int> m;
-    std::cout << m.size();
-    if (m[0] == 0)
-    {
-        std::cout << m[0];
-        std::cout << m.size();
-    }
+	cin >> cnt >> m;
+
+	for (int i = 1; i <= cnt; i++)
+	{
+		cin >> b[i];
+	}
+
+	ch[0] = 1;
+	DFS(0);
 }
