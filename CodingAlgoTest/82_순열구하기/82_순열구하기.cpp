@@ -11,7 +11,7 @@ vector<int> answer(3);
 
 void DFS(int n)
 {
-	if (n == m-1)
+	if (n == m)
 	{
 		for (int i = 0; i < m; i++)
 		{
@@ -21,7 +21,7 @@ void DFS(int n)
 	}
 	else
 	{
-		for (int i = 1; i < b.size(); i++)	//1 3 6 7
+		for (int i = 1; i < b.size(); i++)	
 		{
 			if (ch[i] == 0)
 			{
@@ -37,9 +37,9 @@ void DFS(int n)
 
 int main()
 {
-	cin >> cnt >> m;
+	cin >> cnt >> m;	//4 3
 
-	for (int i = 1; i <= cnt; i++)
+	for (int i = 1; i <= cnt; i++)	//4
 	{
 		cin >> b[i];
 	}
