@@ -47,6 +47,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "85_수식만들기_DFS", "8
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "86_피자배달_삼성SW역량평가", "86_피자배달_삼성SW역량평가\86_피자배달_삼성SW역량평가.vcxproj", "{748C6B51-0BC3-4482-8825-5CC9572F70D6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "88_미로의최단거리통로(BFS)", "88_미로의최단거리통로(BFS)\88_미로의최단거리통로(BFS).vcxproj", "{D85400F1-51F5-4362-A32E-D574C925C32D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "87_섬나라아일랜드(BFS)", "87_섬나라아일랜드(BFS)\87_섬나라아일랜드(BFS).vcxproj", "{E265EDD9-9FE0-44F9-ACD7-4674D7F9DEA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -231,6 +235,22 @@ Global
 		{748C6B51-0BC3-4482-8825-5CC9572F70D6}.Release|x64.Build.0 = Release|x64
 		{748C6B51-0BC3-4482-8825-5CC9572F70D6}.Release|x86.ActiveCfg = Release|Win32
 		{748C6B51-0BC3-4482-8825-5CC9572F70D6}.Release|x86.Build.0 = Release|Win32
+		{D85400F1-51F5-4362-A32E-D574C925C32D}.Debug|x64.ActiveCfg = Debug|x64
+		{D85400F1-51F5-4362-A32E-D574C925C32D}.Debug|x64.Build.0 = Debug|x64
+		{D85400F1-51F5-4362-A32E-D574C925C32D}.Debug|x86.ActiveCfg = Debug|Win32
+		{D85400F1-51F5-4362-A32E-D574C925C32D}.Debug|x86.Build.0 = Debug|Win32
+		{D85400F1-51F5-4362-A32E-D574C925C32D}.Release|x64.ActiveCfg = Release|x64
+		{D85400F1-51F5-4362-A32E-D574C925C32D}.Release|x64.Build.0 = Release|x64
+		{D85400F1-51F5-4362-A32E-D574C925C32D}.Release|x86.ActiveCfg = Release|Win32
+		{D85400F1-51F5-4362-A32E-D574C925C32D}.Release|x86.Build.0 = Release|Win32
+		{E265EDD9-9FE0-44F9-ACD7-4674D7F9DEA5}.Debug|x64.ActiveCfg = Debug|x64
+		{E265EDD9-9FE0-44F9-ACD7-4674D7F9DEA5}.Debug|x64.Build.0 = Debug|x64
+		{E265EDD9-9FE0-44F9-ACD7-4674D7F9DEA5}.Debug|x86.ActiveCfg = Debug|Win32
+		{E265EDD9-9FE0-44F9-ACD7-4674D7F9DEA5}.Debug|x86.Build.0 = Debug|Win32
+		{E265EDD9-9FE0-44F9-ACD7-4674D7F9DEA5}.Release|x64.ActiveCfg = Release|x64
+		{E265EDD9-9FE0-44F9-ACD7-4674D7F9DEA5}.Release|x64.Build.0 = Release|x64
+		{E265EDD9-9FE0-44F9-ACD7-4674D7F9DEA5}.Release|x86.ActiveCfg = Release|Win32
+		{E265EDD9-9FE0-44F9-ACD7-4674D7F9DEA5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
