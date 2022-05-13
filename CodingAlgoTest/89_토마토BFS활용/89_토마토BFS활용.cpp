@@ -39,40 +39,89 @@
 
 using namespace std;
 
+int dx[] = { 0, -1, 0, 1};
+int dy[] = {-1,  0, 1, 0};
+
 class Pos
 {
 public:
     int _x;
     int _y;
-    Pos(int x, int y) : _x(x), _y(y) {}
+    Pos(int y, int x) : _x(x), _y(y) {}
 };
 
 int main()
 {
-    int m, n;
-    cin >> m >> n;
+    int m, n , max = 0;
+    cin >> m >> n;  //6 4
 
     vector<vector<int>> map(n+2, vector<int>(m+2,1));
+    vector<vector<int>> count(n+2, vector<int>(m+2,0));
+    queue<Pos> onePos;
 
     for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j <= m; j++)
         {
             cin >> map[i][j];
+            
+            if (map[i][j] == 1)
+            {
+                onePos.push(Pos(i, j));
+            }
         }
         cout << endl;
     }
 
+    cout << onePos.size() << endl; 
+
     for (int i = 0; i < map.size(); i++)
     {
-        for (int j = 1; j <map[0].size(); j++)
+        for (int j = 0; j <map[0].size(); j++)
         {
             cout << map[i][j] << " ";
         }
         cout << endl;
     }
 
-    queue<int> q;
+    queue<Pos> q;
+    int size = onePos.size();
+    for (int i = 0; i < size; i++)
+    {
+        q.push(onePos.front());
+        onePos.pop();
+    }
+
+    while (!q.empty())
+    {
+        Pos temp = q.front();
+        q.pop();
+
+        cout << temp._y << "," << temp._x << endl;
+
+        for (int i = 0; i < 4; i++)
+        {
+            if (map[temp._y + dy[i]][temp._x + dx[i]] == 0)
+            {
+                q.push(Pos(temp._y + dy[i], temp._x + dx[i]));
+                map[temp._y + dy[i]][temp._x + dx[i]] = 1;
+                count[temp._y + dy[i]][temp._x + dx[i]] = count[temp._y][temp._x] + 1;
+                if (max < count[temp._y + dy[i]][temp._x + dx[i]])
+                    max = count[temp._y + dy[i]][temp._x + dx[i]];
+            }   
+        }
+    }
+
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= m; j++)
+        {
+            cout << count[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    cout << max;
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
