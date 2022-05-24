@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "87_섬나라아일랜드(BF
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "89_토마토BFS활용", "89_토마토BFS활용\89_토마토BFS활용.vcxproj", "{B8933BD9-11E7-4644-8CD8-B3D7B4CA662A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "90_라이언킹심바(BFS)_삼성SW기출", "90_라이언킹심바(BFS)_삼성SW기출\90_라이언킹심바(BFS)_삼성SW기출.vcxproj", "{0B04C2B8-7504-40BB-9F36-FF8D30BF12A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -261,6 +263,14 @@ Global
 		{B8933BD9-11E7-4644-8CD8-B3D7B4CA662A}.Release|x64.Build.0 = Release|x64
 		{B8933BD9-11E7-4644-8CD8-B3D7B4CA662A}.Release|x86.ActiveCfg = Release|Win32
 		{B8933BD9-11E7-4644-8CD8-B3D7B4CA662A}.Release|x86.Build.0 = Release|Win32
+		{0B04C2B8-7504-40BB-9F36-FF8D30BF12A3}.Debug|x64.ActiveCfg = Debug|x64
+		{0B04C2B8-7504-40BB-9F36-FF8D30BF12A3}.Debug|x64.Build.0 = Debug|x64
+		{0B04C2B8-7504-40BB-9F36-FF8D30BF12A3}.Debug|x86.ActiveCfg = Debug|Win32
+		{0B04C2B8-7504-40BB-9F36-FF8D30BF12A3}.Debug|x86.Build.0 = Debug|Win32
+		{0B04C2B8-7504-40BB-9F36-FF8D30BF12A3}.Release|x64.ActiveCfg = Release|x64
+		{0B04C2B8-7504-40BB-9F36-FF8D30BF12A3}.Release|x64.Build.0 = Release|x64
+		{0B04C2B8-7504-40BB-9F36-FF8D30BF12A3}.Release|x86.ActiveCfg = Release|Win32
+		{0B04C2B8-7504-40BB-9F36-FF8D30BF12A3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
