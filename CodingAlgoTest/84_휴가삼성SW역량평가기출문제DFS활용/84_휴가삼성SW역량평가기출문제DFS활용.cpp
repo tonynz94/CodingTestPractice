@@ -38,88 +38,89 @@ P | 20   10   15   20    30    20  10
 
 //조합 문제 
 
+
 #include <iostream>
 #include <vector>
 
-using namespace std;
+namespace _84 {
+    using namespace std;
 
+    class Work
+    {
+    public:
+        int _day;
+        int _pay;
+        Work(int day, int pay) : _day(day), _pay(pay) {}
+    };
 
+    vector<Work> v;
+    vector<Work> combination;
+    int cnt, d, p, max;
 
-class Work
-{
-public:
-    int _day;
-    int _pay;
-    Work(int day, int pay) : _day(day), _pay(pay){}
+    void DFS(int level)
+    {
+        if (level == cnt + 1)
+        {
+            cout << "level이 8인 경우" << endl;
+            int temp = 0;
+            for (int i = 0; i < combination.size(); i++)
+            {
+                temp += combination[i]._pay;
+            }
+
+            if (max < temp) {
+                for (int i = 0; i < combination.size(); i++)
+                {
+                    cout << combination[i]._day << " : " << combination[i]._pay << endl;
+                }
+                cout << temp << endl << endl;
+                max = temp;
+            }
+        }
+        else if (level > cnt + 1)
+        {
+            int temp = 0;
+            for (int i = 0; i < combination.size() - 1; i++)
+            {
+                temp += combination[i]._pay;
+            }
+
+            if (max < temp)
+            {
+                for (int i = 0; i < combination.size(); i++)
+                {
+                    cout << combination[i]._day << " : " << combination[i]._pay << endl;
+                }
+                cout << temp << endl << endl;
+                max = temp;
+            }
+        }
+        else
+        {
+            for (int i = level; i <= cnt; i++)  // 1 ~ 7
+            {
+                combination.push_back(v[i]);        //v[1]
+                cout << "Push : " << v[i]._day << " " << v[i]._pay << " " << level + v[i]._day << endl << endl;
+                DFS(level + v[i]._day);                 //1 + v[1]._day(4) => 5
+
+                cout << "Pop : " << combination[combination.size() - 1]._day << " " << combination[combination.size() - 1]._pay << " " << level + combination[combination.size() - 1]._day << endl << endl;
+                combination.pop_back();
+            }
+        }
+    }
+
+    void main()
+    {
+        cin >> cnt;
+        v.push_back(Work(0, 0));
+
+        for (int i = 0; i < cnt; i++) {
+            cin >> d >> p;
+            v.push_back(Work(d, p));
+        }
+
+        DFS(1);
+
+        cout << max;
+    }
 };
-
-vector<Work> v;
-vector<Work> combination;
-int cnt, d, p, max;
-
-void DFS(int level)
-{
-    if (level == cnt + 1)
-    {
-        cout << "level이 8인 경우" << endl;
-        int temp = 0;
-        for (int i = 0; i < combination.size(); i++)
-        {
-            temp += combination[i]._pay;
-        }
-
-        if (max < temp) {
-            for (int i = 0; i < combination.size(); i++)
-            {
-                cout << combination[i]._day << " : " << combination[i]._pay << endl;
-            }
-            cout << temp << endl << endl;
-            max = temp;
-        }
-    }
-    else if (level > cnt + 1)
-    {
-        int temp = 0;
-        for (int i = 0; i < combination.size() - 1; i++)
-        {
-            temp += combination[i]._pay;
-        }
-
-        if (max < temp)
-        {
-            for (int i = 0; i < combination.size(); i++)
-            {
-                cout << combination[i]._day << " : " << combination[i]._pay << endl;
-            }
-            cout << temp << endl << endl;
-            max = temp;
-        }
-    }
-    else
-    {
-        for (int i = level; i <= cnt; i++)  // 1 ~ 7
-        {
-            combination.push_back(v[i]);        //v[1]
-            cout <<"Push : " <<  v[i]._day << " " << v[i]._pay << " " << level + v[i]._day << endl << endl;
-            DFS(level + v[i]._day);                 //1 + v[1]._day(4) => 5
-
-            cout << "Pop : " << combination[combination.size() - 1]._day << " " << combination[combination.size() - 1]._pay << " " << level + combination[combination.size() - 1]._day << endl << endl;
-            combination.pop_back();
-        }
-    }
-}
-
-int main()
-{
-    cin >> cnt;
-    v.push_back(Work(0, 0));
-
-    for (int i = 0; i < cnt; i++) {
-        cin >> d >> p;
-        v.push_back(Work(d, p));
-    }
-    
-    DFS(1);
-
-    cout << max;
-}
