@@ -63,6 +63,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "92_동적계획법응용", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "93_동적계획법응용2(메모제이션)", "93_동적계획법응용2(메모제이션)\93_동적계획법응용2(메모제이션).vcxproj", "{D763F92D-A8DC-46E9-A61B-9E4B8DC7B6E7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "94_부분증가수열_탑다운메모제이션", "94_부분증가수열_탑다운메모제이션\94_부분증가수열_탑다운메모제이션.vcxproj", "{B138D83C-A663-4AA7-9A77-C705FFE1CB4F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "95_탑다운메모제이슨_응용2", "95_탑다운메모제이슨_응용2\95_탑다운메모제이슨_응용2.vcxproj", "{FCFD76EB-6D16-405A-B1B4-8B22C22A2060}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -311,6 +315,22 @@ Global
 		{D763F92D-A8DC-46E9-A61B-9E4B8DC7B6E7}.Release|x64.Build.0 = Release|x64
 		{D763F92D-A8DC-46E9-A61B-9E4B8DC7B6E7}.Release|x86.ActiveCfg = Release|Win32
 		{D763F92D-A8DC-46E9-A61B-9E4B8DC7B6E7}.Release|x86.Build.0 = Release|Win32
+		{B138D83C-A663-4AA7-9A77-C705FFE1CB4F}.Debug|x64.ActiveCfg = Debug|x64
+		{B138D83C-A663-4AA7-9A77-C705FFE1CB4F}.Debug|x64.Build.0 = Debug|x64
+		{B138D83C-A663-4AA7-9A77-C705FFE1CB4F}.Debug|x86.ActiveCfg = Debug|Win32
+		{B138D83C-A663-4AA7-9A77-C705FFE1CB4F}.Debug|x86.Build.0 = Debug|Win32
+		{B138D83C-A663-4AA7-9A77-C705FFE1CB4F}.Release|x64.ActiveCfg = Release|x64
+		{B138D83C-A663-4AA7-9A77-C705FFE1CB4F}.Release|x64.Build.0 = Release|x64
+		{B138D83C-A663-4AA7-9A77-C705FFE1CB4F}.Release|x86.ActiveCfg = Release|Win32
+		{B138D83C-A663-4AA7-9A77-C705FFE1CB4F}.Release|x86.Build.0 = Release|Win32
+		{FCFD76EB-6D16-405A-B1B4-8B22C22A2060}.Debug|x64.ActiveCfg = Debug|x64
+		{FCFD76EB-6D16-405A-B1B4-8B22C22A2060}.Debug|x64.Build.0 = Debug|x64
+		{FCFD76EB-6D16-405A-B1B4-8B22C22A2060}.Debug|x86.ActiveCfg = Debug|Win32
+		{FCFD76EB-6D16-405A-B1B4-8B22C22A2060}.Debug|x86.Build.0 = Debug|Win32
+		{FCFD76EB-6D16-405A-B1B4-8B22C22A2060}.Release|x64.ActiveCfg = Release|x64
+		{FCFD76EB-6D16-405A-B1B4-8B22C22A2060}.Release|x64.Build.0 = Release|x64
+		{FCFD76EB-6D16-405A-B1B4-8B22C22A2060}.Release|x86.ActiveCfg = Release|Win32
+		{FCFD76EB-6D16-405A-B1B4-8B22C22A2060}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
