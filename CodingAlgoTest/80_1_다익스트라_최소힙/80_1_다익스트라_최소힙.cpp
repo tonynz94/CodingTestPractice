@@ -83,7 +83,7 @@ int main()
             {
                 answer[map[minN][i]._node] = minV + map[minN][i]._value;
             }
-        }
+        }           
     }
 
     for (int i = 2; i < n+1; i++)

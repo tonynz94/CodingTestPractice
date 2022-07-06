@@ -54,10 +54,10 @@ int main()
     cin >> n >> line;
 
     vector<vector<Node>> graph(n+1, vector<Node>());
-    vector<int> minPath(n+1 , 2147000000);
+    vector<int> minPath(n+1 , INT32_MAX);
     vector<int> ch(n + 1, 0);
 
-    int minValue = 2147000000;
+    int minValue = INT32_MAX;
     
     
     for (int i = 0; i < line; i++)
@@ -73,7 +73,7 @@ int main()
 
     for (int i = 2; i <= n; i++)
     {
-        minValue = 2147000000;
+        minValue = INT32_MAX;
         for (int i = 1; i < minPath.size(); i++)
         {
             //지나가지 않은 것 들 중에 최소값 선택하기
