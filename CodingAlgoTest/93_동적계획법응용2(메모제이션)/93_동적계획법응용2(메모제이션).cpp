@@ -19,19 +19,25 @@
 #include <iostream>
 
 using namespace std;
-int _stairs;
-int arr[45] = { 0 };
-
+int length;
+int arr[45];
 int DFS(int level)
 {
-    if (level <= 2)
-        return level;
-    else
-        return arr[level] = DFS(level-2) + DFS(level - 1);
+	if (level <= 2)
+		return level;
+	else
+		return DFS(level - 1) + DFS(level - 2);
 }
+
+//int BFS()
+//{
+//
+//}
 
 int main()
 {
-    cin >> _stairs;
-    cout << DFS(_stairs);
+	cin >> length;
+	cout << DFS(length);
+
+
 }

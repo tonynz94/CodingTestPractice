@@ -79,6 +79,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lv3_프로그래머스_입�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lv3_프로그래머스_네트워크", "Lv3_프로그래머스_네트워크\Lv3_프로그래머스_네트워크.vcxproj", "{7127D766-A26C-4BB8-AF6F-DEE0C0B382DC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BackJoon_2583_영역구하기", "BackJoon_2583_영역구하기\BackJoon_2583_영역구하기.vcxproj", "{413009F4-6408-4C41-98AB-1A07B5BDBC2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -391,6 +393,14 @@ Global
 		{7127D766-A26C-4BB8-AF6F-DEE0C0B382DC}.Release|x64.Build.0 = Release|x64
 		{7127D766-A26C-4BB8-AF6F-DEE0C0B382DC}.Release|x86.ActiveCfg = Release|Win32
 		{7127D766-A26C-4BB8-AF6F-DEE0C0B382DC}.Release|x86.Build.0 = Release|Win32
+		{413009F4-6408-4C41-98AB-1A07B5BDBC2C}.Debug|x64.ActiveCfg = Debug|x64
+		{413009F4-6408-4C41-98AB-1A07B5BDBC2C}.Debug|x64.Build.0 = Debug|x64
+		{413009F4-6408-4C41-98AB-1A07B5BDBC2C}.Debug|x86.ActiveCfg = Debug|Win32
+		{413009F4-6408-4C41-98AB-1A07B5BDBC2C}.Debug|x86.Build.0 = Debug|Win32
+		{413009F4-6408-4C41-98AB-1A07B5BDBC2C}.Release|x64.ActiveCfg = Release|x64
+		{413009F4-6408-4C41-98AB-1A07B5BDBC2C}.Release|x64.Build.0 = Release|x64
+		{413009F4-6408-4C41-98AB-1A07B5BDBC2C}.Release|x86.ActiveCfg = Release|Win32
+		{413009F4-6408-4C41-98AB-1A07B5BDBC2C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
