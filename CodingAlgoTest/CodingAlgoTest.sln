@@ -81,6 +81,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lv3_프로그래머스_네�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BackJoon_2583_영역구하기", "BackJoon_2583_영역구하기\BackJoon_2583_영역구하기.vcxproj", "{413009F4-6408-4C41-98AB-1A07B5BDBC2C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BackJoon_2667_단지번호붙이기", "BackJoon_2667_단지번호붙이기\BackJoon_2667_단지번호붙이기.vcxproj", "{590A9418-54F8-471B-9DE7-B49D2B32025D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BackJoon_1759_암호만들기", "BackJoon_1759_암호만들기\BackJoon_1759_암호만들기.vcxproj", "{A06BE99F-805E-497F-A02E-2F9D166E6719}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -401,6 +405,22 @@ Global
 		{413009F4-6408-4C41-98AB-1A07B5BDBC2C}.Release|x64.Build.0 = Release|x64
 		{413009F4-6408-4C41-98AB-1A07B5BDBC2C}.Release|x86.ActiveCfg = Release|Win32
 		{413009F4-6408-4C41-98AB-1A07B5BDBC2C}.Release|x86.Build.0 = Release|Win32
+		{590A9418-54F8-471B-9DE7-B49D2B32025D}.Debug|x64.ActiveCfg = Debug|x64
+		{590A9418-54F8-471B-9DE7-B49D2B32025D}.Debug|x64.Build.0 = Debug|x64
+		{590A9418-54F8-471B-9DE7-B49D2B32025D}.Debug|x86.ActiveCfg = Debug|Win32
+		{590A9418-54F8-471B-9DE7-B49D2B32025D}.Debug|x86.Build.0 = Debug|Win32
+		{590A9418-54F8-471B-9DE7-B49D2B32025D}.Release|x64.ActiveCfg = Release|x64
+		{590A9418-54F8-471B-9DE7-B49D2B32025D}.Release|x64.Build.0 = Release|x64
+		{590A9418-54F8-471B-9DE7-B49D2B32025D}.Release|x86.ActiveCfg = Release|Win32
+		{590A9418-54F8-471B-9DE7-B49D2B32025D}.Release|x86.Build.0 = Release|Win32
+		{A06BE99F-805E-497F-A02E-2F9D166E6719}.Debug|x64.ActiveCfg = Debug|x64
+		{A06BE99F-805E-497F-A02E-2F9D166E6719}.Debug|x64.Build.0 = Debug|x64
+		{A06BE99F-805E-497F-A02E-2F9D166E6719}.Debug|x86.ActiveCfg = Debug|Win32
+		{A06BE99F-805E-497F-A02E-2F9D166E6719}.Debug|x86.Build.0 = Debug|Win32
+		{A06BE99F-805E-497F-A02E-2F9D166E6719}.Release|x64.ActiveCfg = Release|x64
+		{A06BE99F-805E-497F-A02E-2F9D166E6719}.Release|x64.Build.0 = Release|x64
+		{A06BE99F-805E-497F-A02E-2F9D166E6719}.Release|x86.ActiveCfg = Release|Win32
+		{A06BE99F-805E-497F-A02E-2F9D166E6719}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
